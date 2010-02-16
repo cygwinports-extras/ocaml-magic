@@ -1,0 +1,12 @@
+inherit ocaml
+
+DESCRIPTION="OCaml libmagic bindings"
+HOMEPAGE="http://sourceforge.net/projects/ocaml-magic/"
+SRC_URI="mirror://sourceforge/ocaml-magic/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
