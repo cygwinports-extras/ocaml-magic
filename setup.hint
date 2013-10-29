@@ -1,6 +1,0 @@
-category: OCaml
-requires: file ocaml-base
-sdesc: "OCaml libmagic bindings"
-ldesc: "An Objective Caml binding to libmagic tries to classify files 
-using various tests (filesystem tests, magic number tests, and language 
-tests)."

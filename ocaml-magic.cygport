@@ -1,0 +1,18 @@
+inherit ocaml
+
+NAME="ocaml-magic"
+VERSION=0.7.3
+RELEASE=3
+CATEGORY="Libs"
+SUMMARY="OCaml libmagic bindings"
+DESCRIPTION="An Objective Caml binding to libmagic tries to classify files
+using various tests (filesystem tests, magic number tests, and language tests)."
+HOMEPAGE="http://sourceforge.net/projects/ocaml-magic/"
+SRC_URI="mirror://sourceforge/ocaml-magic/${NAME}-${VERSION}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
