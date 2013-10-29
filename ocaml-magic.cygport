@@ -2,7 +2,7 @@ inherit ocaml
 
 NAME="ocaml-magic"
 VERSION=0.7.3
-RELEASE=3
+RELEASE=4
 CATEGORY="Libs"
 SUMMARY="OCaml libmagic bindings"
 DESCRIPTION="An Objective Caml binding to libmagic tries to classify files
